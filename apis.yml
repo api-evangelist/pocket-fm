@@ -1,8 +1,23 @@
 aid: pocket-fm
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pocket-fm.png
 name: Pocket Fm
-description: Pocket Fm is a company surfaced as a portfolio company of lightspeed-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Pocket FM is an audio entertainment platform offering long-form audio series, audiobooks,
+  and serialized stories across genres such as romance, fantasy, thriller, and horror. Listeners stream
+  free episodes and unlock premium content through an in-app coins/store model, while writers and voice
+  creators publish original work through the Pocket FM Studio. The company was surfaced as a portfolio
+  company of Lightspeed Venture Partners. As of this enrichment pass, Pocket FM operates as a consumer-facing
+  mobile and web product and does not publish a public developer API, API documentation, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/pocket-fm/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +27,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Audio
+- Streaming
+- Audiobooks
+- Entertainment
+- Media
+- Consumer
 apis: []
+common:
+- type: DomainSecurity
+  url: security/pocket-fm-domain-security.yml
+- type: Website
+  url: https://pocketfm.com
+- type: PrivacyPolicy
+  url: https://pocketfm.com/privacy-policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
